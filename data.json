@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "updated_at": "2026-10-31T17:22:11.416401+08:00",
-  "snapshot": "00b29ff551e427524a578dc4eba85121fdf66ded09b83d144528e06c82083ec2",
+  "updated_at": "2026-10-31T17:33:27.154975+08:00",
+  "snapshot": "24de3980771c1ae01d01d21195ab3deb305ea870aa1727e0d470e8e6a97e03dc",
   "scope": "BW internal experiments; not an official ranking",
   "counts": {
     "versions": 109,
@@ -13,7 +13,7 @@
     "id": "d2aadaf6477420fb302ad5dff30056daae350b61142c44d7642e8bdef26cb951",
     "name": "structure_graph_large",
     "source_commit": "9af860d45abd312888e5a78aafb882c2cfc0a7e9",
-    "representative_score": 88.54892566175997,
+    "representative_score": 89.10070397236011,
     "fresh_score": 88.96922445764349,
     "times": [
       0.10791293997317553,
@@ -151,6 +151,36 @@
       },
       {
         "rank": 4,
+        "name": "structure_graph_large",
+        "id": "d2aadaf6477420fb302ad5dff30056daae350b61142c44d7642e8bdef26cb951",
+        "times": [
+          0.10571684618480504,
+          0.7857404490932822,
+          0.91283421497792,
+          0.07414642488583922
+        ],
+        "rates": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "R": 1.0,
+        "base": 25,
+        "consistency": 24.999999999999993,
+        "performance": [
+          9.91076197649487,
+          9.530470422896101,
+          9.74597645698045,
+          9.913495115988693
+        ],
+        "score": 89.10070397236011,
+        "n": 61,
+        "failures": 0,
+        "min_rates": []
+      },
+      {
+        "rank": 5,
         "name": "b8_scoped_determinism",
         "id": "b1e314fcd724e445573dbfa47db27cffac00eb64f5533a91bc44a07848c4d050",
         "times": [
@@ -180,7 +210,7 @@
         "min_rates": []
       },
       {
-        "rank": 5,
+        "rank": 6,
         "name": "b8_hardware_packed_dev",
         "id": "022e390b312b761da349d4f8037786fbba31e61aba6296c3fb7133e4509422b4",
         "times": [
@@ -210,7 +240,7 @@
         "min_rates": []
       },
       {
-        "rank": 6,
+        "rank": 7,
         "name": "b8_hardware_pipeline2_dev",
         "id": "0ec9904603278abab3e1a02d5f684e5d3c396f849e8306afcdb9eaef64334949",
         "times": [
@@ -236,36 +266,6 @@
         ],
         "score": 88.96523540388665,
         "n": 1,
-        "failures": 0,
-        "min_rates": []
-      },
-      {
-        "rank": 7,
-        "name": "structure_graph_large",
-        "id": "d2aadaf6477420fb302ad5dff30056daae350b61142c44d7642e8bdef26cb951",
-        "times": [
-          0.10629895702004433,
-          0.8103556269779801,
-          0.9253007869701833,
-          0.07472458202391863
-        ],
-        "rates": [
-          1.0,
-          1.0,
-          1.0,
-          1.0
-        ],
-        "R": 1.0,
-        "base": 25,
-        "consistency": 24.999999999999993,
-        "performance": [
-          9.856488989311115,
-          9.240975024857958,
-          9.614668974217265,
-          9.836792673373632
-        ],
-        "score": 88.54892566175997,
-        "n": 61,
         "failures": 0,
         "min_rates": []
       },
@@ -3214,10 +3214,10 @@
         "name": "official_fp32",
         "id": "cba11e9837b44917f91dcd99e8967c199faa53a6e058e1cbafcd8c23ca27a354",
         "times": [
-          9.07404350116849,
-          9.02171460003592,
-          18.152722049038857,
-          2.4084732870105654
+          9.541519957128912,
+          9.527736571850255,
+          19.193658103002235,
+          2.5336671262048185
         ],
         "rates": [
           1.0,
@@ -3229,12 +3229,12 @@
         "base": 25,
         "consistency": 24.999999999999993,
         "performance": [
-          0.11546500733751197,
-          0.8300502113120282,
-          0.4900896264630508,
-          0.30519342894026674
+          0.10980792412015146,
+          0.7859659063498213,
+          0.4635104324854819,
+          0.2901131776038875
         ],
-        "score": 51.74079827405285,
+        "score": 51.64939744055933,
         "n": 13,
         "failures": 0,
         "min_rates": []
