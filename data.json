@@ -1,19 +1,19 @@
 {
   "schema": 2,
-  "updated_at": "2026-11-01T19:51:53.903751+08:00",
-  "snapshot": "caf3fcbd93b4e83550b83c2df01ccdfa9d59e7a39aad25918fc336bc0505bb03",
+  "updated_at": "2026-11-03T02:32:32.427301+08:00",
+  "snapshot": "c711672552e8ad016b85142e8fafe61e30a9ea7f16d2f8cb7646c0893ee02196",
   "scope": "BW internal experiments; not an official ranking",
   "counts": {
-    "versions": 111,
-    "attempts": 552,
-    "complete_runs": 551,
+    "versions": 112,
+    "attempts": 554,
+    "complete_runs": 553,
     "failed_or_incomplete_runs": 1
   },
   "champion": {
     "id": "d2aadaf6477420fb302ad5dff30056daae350b61142c44d7642e8bdef26cb951",
     "name": "structure_graph_large",
     "source_commit": "9af860d45abd312888e5a78aafb882c2cfc0a7e9",
-    "representative_score": 89.0745130192617,
+    "representative_score": 89.14759852022661,
     "fresh_score": 88.94287842522613,
     "times": [
       0.10791293997317553,
@@ -121,6 +121,36 @@
       },
       {
         "rank": 3,
+        "name": "structure_graph_large",
+        "id": "d2aadaf6477420fb302ad5dff30056daae350b61142c44d7642e8bdef26cb951",
+        "times": [
+          0.10659849410876632,
+          0.7777452680747956,
+          0.9050157980527729,
+          0.07434806902892888
+        ],
+        "rates": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "R": 1.0,
+        "base": 25,
+        "consistency": 24.999999999999993,
+        "performance": [
+          9.828792687955618,
+          9.628443164550967,
+          9.803754574539006,
+          9.886608093181025
+        ],
+        "score": 89.14759852022661,
+        "n": 80,
+        "failures": 0,
+        "min_rates": []
+      },
+      {
+        "rank": 4,
         "name": "structure_verifier_bm32_b4",
         "id": "7e6fade3b4b58963b449538844e908cb09d4cdb7090109c30eed114d499d10aa",
         "times": [
@@ -150,7 +180,7 @@
         "min_rates": []
       },
       {
-        "rank": 4,
+        "rank": 5,
         "name": "b4_pair_output_v1",
         "id": "e2b815570bccfaef827e9a23965bb38d2934c1afb9a96c5bfa7fc39ce88411f3",
         "times": [
@@ -176,36 +206,6 @@
         ],
         "score": 89.09266182846636,
         "n": 7,
-        "failures": 0,
-        "min_rates": []
-      },
-      {
-        "rank": 5,
-        "name": "structure_graph_large",
-        "id": "d2aadaf6477420fb302ad5dff30056daae350b61142c44d7642e8bdef26cb951",
-        "times": [
-          0.10571684618480504,
-          0.7857404490932822,
-          0.91283421497792,
-          0.07414642488583922
-        ],
-        "rates": [
-          1.0,
-          1.0,
-          1.0,
-          1.0
-        ],
-        "R": 1.0,
-        "base": 25,
-        "consistency": 24.999999999999993,
-        "performance": [
-          9.91076197649487,
-          9.530470422896101,
-          9.719785503882052,
-          9.913495115988693
-        ],
-        "score": 89.0745130192617,
-        "n": 79,
         "failures": 0,
         "min_rates": []
       },
@@ -2071,6 +2071,36 @@
       },
       {
         "rank": 68,
+        "name": "structure_graph_large_serial_only_20261103",
+        "id": "5d550cb5899486691dcc36dcfc9ffda2ca90a66c2af6375fb55c806efc3f797d",
+        "times": [
+          0.6956729399971664,
+          0.8466342440806329,
+          1.9021156078670174,
+          0.3033159279730171
+        ],
+        "rates": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "R": 1.0,
+        "base": 25,
+        "consistency": 24.999999999999993,
+        "performance": [
+          1.5060733847827832,
+          8.844995536754391,
+          4.664570719830952,
+          2.42338154110779
+        ],
+        "score": 67.43902118247591,
+        "n": 1,
+        "failures": 0,
+        "min_rates": []
+      },
+      {
+        "rank": 69,
         "name": "joint_half",
         "id": "f3fc62efb6a47ef67c38b1b362248cc3cf413499230e10d7261da82277deb8f7",
         "times": [
@@ -2100,7 +2130,7 @@
         "min_rates": []
       },
       {
-        "rank": 69,
+        "rank": 70,
         "name": "joint_half_graph16",
         "id": "15dfc43be6468b1f599e53ae3504e4c708b9d197de7205ba11c5a8ca4647e98e",
         "times": [
@@ -2130,7 +2160,7 @@
         "min_rates": []
       },
       {
-        "rank": 70,
+        "rank": 71,
         "name": "e_fixed_shape_recheck",
         "id": "48eb07fd555796cc0f679b7ead8808f341a15b70344f238fc8423b6b436cfb23",
         "times": [
@@ -2160,7 +2190,7 @@
         "min_rates": []
       },
       {
-        "rank": 71,
+        "rank": 72,
         "name": "e_graph16_tail",
         "id": "18ba9a900d22f944a9119bc1924c21f5fed9e61db4baa35b21a7e5a47bfee506",
         "times": [
@@ -2190,7 +2220,7 @@
         "min_rates": []
       },
       {
-        "rank": 72,
+        "rank": 73,
         "name": "graph16",
         "id": "7552bedf7c8eb065e8e6c89f1c665203f585e366a1f35541f5149a1b57160993",
         "times": [
@@ -2220,7 +2250,7 @@
         "min_rates": []
       },
       {
-        "rank": 73,
+        "rank": 74,
         "name": "out8_half",
         "id": "66fad249c2ed238c1d43e5335580d52e65896fef5c1b167d73b76c49abd3cd13",
         "times": [
@@ -2250,7 +2280,7 @@
         "min_rates": []
       },
       {
-        "rank": 74,
+        "rank": 75,
         "name": "e7_joint_fused",
         "id": "dde4da4470dc3df96e7a64b67dc11c70dea71d7860351e3a2ac5b5beca1d4f8e",
         "times": [
@@ -2280,7 +2310,7 @@
         "min_rates": []
       },
       {
-        "rank": 75,
+        "rank": 76,
         "name": "e_graph8_tail",
         "id": "2efac2006fea72973d3fd27aaeab9001a49275ec0986b19f32d493433a416a50",
         "times": [
@@ -2310,7 +2340,7 @@
         "min_rates": []
       },
       {
-        "rank": 76,
+        "rank": 77,
         "name": "e_graph4_tail",
         "id": "46aedb09cb417953d1906944ece6a41931449b0678a868988de880e3b3b08bb8",
         "times": [
@@ -2340,7 +2370,7 @@
         "min_rates": []
       },
       {
-        "rank": 77,
+        "rank": 78,
         "name": "e6_prefill_tradeoff",
         "id": "83aa2f00631d84ac367c1a437406648ed47cba8ad04700f4ec8a5ef41b2d0bf8",
         "times": [
@@ -2370,7 +2400,7 @@
         "min_rates": []
       },
       {
-        "rank": 78,
+        "rank": 79,
         "name": "e5_plus_prefillgelu",
         "id": "3a85bad737a50c35ecc2c1383efe9b8e6b6d6f0e829091d9536c72aaae72ea8b",
         "times": [
@@ -2400,7 +2430,7 @@
         "min_rates": []
       },
       {
-        "rank": 79,
+        "rank": 80,
         "name": "e4_plus_b1gelu",
         "id": "1663bd05dd868e560255c04199f58842154a3573d984eff9c053916e3d62ee65",
         "times": [
@@ -2430,7 +2460,7 @@
         "min_rates": []
       },
       {
-        "rank": 80,
+        "rank": 81,
         "name": "e3_plus_projection",
         "id": "c55bec43433b0da5bdd79d95141696c3ae0aa4f0f596793fdfe4c9cd11e7dede",
         "times": [
@@ -2460,7 +2490,7 @@
         "min_rates": []
       },
       {
-        "rank": 81,
+        "rank": 82,
         "name": "e2_rope_online_norm",
         "id": "ee9c8c70db2e90c0a71b0ac2c488185ba5020cedaef6852043b0834acf61b32c",
         "times": [
@@ -2490,7 +2520,7 @@
         "min_rates": []
       },
       {
-        "rank": 82,
+        "rank": 83,
         "name": "e1_rope_online",
         "id": "f5dd3bd34844fe87d50a66b9604a6c679491bfb74f2744e9ad38950fd0b62427",
         "times": [
@@ -2520,7 +2550,7 @@
         "min_rates": []
       },
       {
-        "rank": 83,
+        "rank": 84,
         "name": "b1_rope_kv",
         "id": "0e7a476d6bde6a2e6a7b7e582b3d3ea6d69c2976f43dc77dc561e5b054032cab",
         "times": [
@@ -2550,7 +2580,7 @@
         "min_rates": []
       },
       {
-        "rank": 84,
+        "rank": 85,
         "name": "a2_fused_joint",
         "id": "62986e32830ce54ef5819619edfa1c8dcae94899a95e659be3b2dc606d96de1f",
         "times": [
@@ -2580,7 +2610,7 @@
         "min_rates": []
       },
       {
-        "rank": 85,
+        "rank": 86,
         "name": "b2_online_attention",
         "id": "fd14e7046c1be89d4b5d4c96cb74c08c03ad844843ac2946420f55b2b4ae6ed4",
         "times": [
@@ -2610,7 +2640,7 @@
         "min_rates": []
       },
       {
-        "rank": 86,
+        "rank": 87,
         "name": "a2_half_storage",
         "id": "657ca8cd04726d0ef7e4a9deaacc9f644741bd234c6645a4986ca9874803166e",
         "times": [
@@ -2640,7 +2670,7 @@
         "min_rates": []
       },
       {
-        "rank": 87,
+        "rank": 88,
         "name": "a2_matrix_b8",
         "id": "311a28fc7e3ef26000f74e4a366a5eacb8e7e217f3e0e3173174f97661127638",
         "times": [
@@ -2670,7 +2700,7 @@
         "min_rates": []
       },
       {
-        "rank": 88,
+        "rank": 89,
         "name": "b3_residual_norm",
         "id": "b1f0aeec900e3650301fb5b55b393afd31da630e69fc979f7d54f30fc0a862f1",
         "times": [
@@ -2700,7 +2730,7 @@
         "min_rates": []
       },
       {
-        "rank": 89,
+        "rank": 90,
         "name": "c1_cached_prefill",
         "id": "43202b3ea8fe64591e9a28678184cdaf55125e2ecaf7ff0cca74d0ffcc67da3a",
         "times": [
@@ -2730,7 +2760,7 @@
         "min_rates": []
       },
       {
-        "rank": 90,
+        "rank": 91,
         "name": "c3_chunk16_tail",
         "id": "6e2f589895ce6314f7bf92041730ea98cc292b2e364831f4eb0e5057ac9dd90c",
         "times": [
@@ -2760,7 +2790,7 @@
         "min_rates": []
       },
       {
-        "rank": 91,
+        "rank": 92,
         "name": "b5_b1_bias_gelu",
         "id": "7a31df466cc8fd297344d61eb49d84837c38f15f1998df6e5d4f8c38b6b09ad9",
         "times": [
@@ -2790,7 +2820,7 @@
         "min_rates": []
       },
       {
-        "rank": 92,
+        "rank": 93,
         "name": "c3_chunk4_tail",
         "id": "77a083c31130775328590e8bd6efc1839f50f39ee090a2e99796cb3f95ec7f5f",
         "times": [
@@ -2820,7 +2850,7 @@
         "min_rates": []
       },
       {
-        "rank": 93,
+        "rank": 94,
         "name": "c2_tiled_prefill_fp16",
         "id": "3ec609a4682953945388ab0a95886bed8d39310a9027b21250cf347c46357e26",
         "times": [
@@ -2850,7 +2880,7 @@
         "min_rates": []
       },
       {
-        "rank": 94,
+        "rank": 95,
         "name": "portable-d2",
         "id": "09ab593b1f8e75ec95b570891fadcadd97fc18ae389e82eb3ea5bb914dded69a",
         "times": [
@@ -2880,7 +2910,7 @@
         "min_rates": []
       },
       {
-        "rank": 95,
+        "rank": 96,
         "name": "c1_fp32_prefill_gelu",
         "id": "f10efe049d0ee5027da5aae1a58aaff845eff3f4d46169169c3b0337e60545c5",
         "times": [
@@ -2910,7 +2940,7 @@
         "min_rates": []
       },
       {
-        "rank": 96,
+        "rank": 97,
         "name": "a4_joint_output",
         "id": "cce3b88f261934be8af68f02624e1b7606c7d005d4f65bcd64fff9d0c864462d",
         "times": [
@@ -2940,7 +2970,7 @@
         "min_rates": []
       },
       {
-        "rank": 97,
+        "rank": 98,
         "name": "c3_chunk8_tail",
         "id": "6cebabb37b50beaed4d21532575d3fe32517380463b29c38dd90a9804dae7682",
         "times": [
@@ -2970,7 +3000,7 @@
         "min_rates": []
       },
       {
-        "rank": 98,
+        "rank": 99,
         "name": "d2_bias_gelu",
         "id": "54e109880f44b943a3517be91cdf75adb0e23c9ca48c1c0eeec9148a601ed3f5",
         "times": [
@@ -3000,7 +3030,7 @@
         "min_rates": []
       },
       {
-        "rank": 99,
+        "rank": 100,
         "name": "d1_shape_joint",
         "id": "6c1e598c2db2e755e837bc12aeab4f7293620bbc2edd461414fbd5a48337d534",
         "times": [
@@ -3030,7 +3060,7 @@
         "min_rates": []
       },
       {
-        "rank": 100,
+        "rank": 101,
         "name": "c3_int8_b1_joint_chunk4_b48",
         "id": "a321e53405a185ffe4fa15d4d9c96d38674e35e14a8d0bd1b96f148353e23d88",
         "times": [
@@ -3060,7 +3090,7 @@
         "min_rates": []
       },
       {
-        "rank": 101,
+        "rank": 102,
         "name": "c3_recheck",
         "id": "fb344a940aed08c904e20a0af03aeff100af2f1632861820a18f3a3dc57dd746",
         "times": [
@@ -3090,7 +3120,7 @@
         "min_rates": []
       },
       {
-        "rank": 102,
+        "rank": 103,
         "name": "a1_joint_fp32",
         "id": "9a0ba14a3b07ac1fe6dbb577a686143b6dd1f1d65109a44a3d5e73b55e21cfc7",
         "times": [
@@ -3120,7 +3150,7 @@
         "min_rates": []
       },
       {
-        "rank": 103,
+        "rank": 104,
         "name": "a3_joint_chunk4_fp32",
         "id": "3f918e755e76521e43817661f59cb096a2cf7879e30c709216b7e79f565cf368",
         "times": [
@@ -3150,7 +3180,7 @@
         "min_rates": []
       },
       {
-        "rank": 104,
+        "rank": 105,
         "name": "published-control-f06",
         "id": "c3c7ab702f10f976026eb992f8adfe78eefad59a441e2d13506e73e477063386",
         "times": [
@@ -3180,7 +3210,7 @@
         "min_rates": []
       },
       {
-        "rank": 105,
+        "rank": 106,
         "name": "b1_mixed_fp16",
         "id": "9d0460bd3b9ae20b82f67806e2790d60000e9933c2eae072856003376802340e",
         "times": [
@@ -3210,7 +3240,7 @@
         "min_rates": []
       },
       {
-        "rank": 106,
+        "rank": 107,
         "name": "c1_int8_weight_selective",
         "id": "724c5cb5970a5c5254d92cb45718e98a419e06eb1880c75dac4c1f415e086277",
         "times": [
@@ -3240,7 +3270,7 @@
         "min_rates": []
       },
       {
-        "rank": 107,
+        "rank": 108,
         "name": "a2_chunk4_fp32",
         "id": "e51eeee63045733ea14e6dab363795e9e12148ac1b46d2ca2d1c40d15cad2a46",
         "times": [
@@ -3270,7 +3300,7 @@
         "min_rates": []
       },
       {
-        "rank": 108,
+        "rank": 109,
         "name": "official_fp32",
         "id": "cba11e9837b44917f91dcd99e8967c199faa53a6e058e1cbafcd8c23ca27a354",
         "times": [
@@ -3300,7 +3330,7 @@
         "min_rates": []
       },
       {
-        "rank": 109,
+        "rank": 110,
         "name": "a1_batch_int8",
         "id": "539f72cdd7e9887382d71ccc40c1974e08394cbfc197734355e147c95d96a4ed",
         "times": [
@@ -3330,7 +3360,7 @@
         "min_rates": []
       },
       {
-        "rank": 110,
+        "rank": 111,
         "name": "b2_full_fp16",
         "id": "0b0d03a6f351fe7cdc3499a4051d125980a373a8f8ec5b7005926f2e27a1e6a2",
         "times": [
@@ -3360,7 +3390,7 @@
         "min_rates": []
       },
       {
-        "rank": 111,
+        "rank": 112,
         "name": "c2_int8_b1_joint_chunk4_b48",
         "id": "5172fdf909a92fa137eabc0e243f1308daea42ff6e4078c45c3ade31bce6f209",
         "times": [
@@ -3579,10 +3609,10 @@
         "name": "structure_graph_large",
         "id": "d2aadaf6477420fb302ad5dff30056daae350b61142c44d7642e8bdef26cb951",
         "times": [
-          0.10628404398448765,
-          0.7846848301123828,
-          0.9030831458512694,
-          0.07419020007364452
+          0.10629150050226599,
+          0.784610754577443,
+          0.9030983279226348,
+          0.0741903290618211
         ],
         "rates": [
           1.0,
@@ -3594,13 +3624,13 @@
         "base": 25,
         "consistency": 24.999999999999993,
         "performance": [
-          9.915996703981337,
-          9.543291551952297,
-          9.75124856486627,
-          9.907645757042653
+          9.915301081044754,
+          9.544192539381633,
+          9.751084635704808,
+          9.907628531493494
         ],
-        "score": 89.11818257784256,
-        "n": 79,
+        "score": 89.11820678762467,
+        "n": 80,
         "failures": 0,
         "min_rates": [
           1.0,
@@ -5746,6 +5776,41 @@
       },
       {
         "rank": 68,
+        "name": "structure_graph_large_serial_only_20261103",
+        "id": "5d550cb5899486691dcc36dcfc9ffda2ca90a66c2af6375fb55c806efc3f797d",
+        "times": [
+          0.6956729399971664,
+          0.8466342440806329,
+          1.9021156078670174,
+          0.3033159279730171
+        ],
+        "rates": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "R": 1.0,
+        "base": 25,
+        "consistency": 24.999999999999993,
+        "performance": [
+          1.5149536071365373,
+          8.844995536754391,
+          4.629680863516038,
+          2.42338154110779
+        ],
+        "score": 67.41301154851475,
+        "n": 1,
+        "failures": 0,
+        "min_rates": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "rank": 69,
         "name": "joint_half",
         "id": "f3fc62efb6a47ef67c38b1b362248cc3cf413499230e10d7261da82277deb8f7",
         "times": [
@@ -5780,7 +5845,7 @@
         ]
       },
       {
-        "rank": 69,
+        "rank": 70,
         "name": "joint_half_graph16",
         "id": "15dfc43be6468b1f599e53ae3504e4c708b9d197de7205ba11c5a8ca4647e98e",
         "times": [
@@ -5815,7 +5880,7 @@
         ]
       },
       {
-        "rank": 70,
+        "rank": 71,
         "name": "graph16",
         "id": "7552bedf7c8eb065e8e6c89f1c665203f585e366a1f35541f5149a1b57160993",
         "times": [
@@ -5850,7 +5915,7 @@
         ]
       },
       {
-        "rank": 71,
+        "rank": 72,
         "name": "out8_half",
         "id": "66fad249c2ed238c1d43e5335580d52e65896fef5c1b167d73b76c49abd3cd13",
         "times": [
@@ -5885,7 +5950,7 @@
         ]
       },
       {
-        "rank": 72,
+        "rank": 73,
         "name": "e_graph16_tail",
         "id": "18ba9a900d22f944a9119bc1924c21f5fed9e61db4baa35b21a7e5a47bfee506",
         "times": [
@@ -5920,7 +5985,7 @@
         ]
       },
       {
-        "rank": 73,
+        "rank": 74,
         "name": "e_fixed_shape_recheck",
         "id": "48eb07fd555796cc0f679b7ead8808f341a15b70344f238fc8423b6b436cfb23",
         "times": [
@@ -5955,7 +6020,7 @@
         ]
       },
       {
-        "rank": 74,
+        "rank": 75,
         "name": "e7_joint_fused",
         "id": "dde4da4470dc3df96e7a64b67dc11c70dea71d7860351e3a2ac5b5beca1d4f8e",
         "times": [
@@ -5990,7 +6055,7 @@
         ]
       },
       {
-        "rank": 75,
+        "rank": 76,
         "name": "e_graph8_tail",
         "id": "2efac2006fea72973d3fd27aaeab9001a49275ec0986b19f32d493433a416a50",
         "times": [
@@ -6025,7 +6090,7 @@
         ]
       },
       {
-        "rank": 76,
+        "rank": 77,
         "name": "e_graph4_tail",
         "id": "46aedb09cb417953d1906944ece6a41931449b0678a868988de880e3b3b08bb8",
         "times": [
@@ -6060,7 +6125,7 @@
         ]
       },
       {
-        "rank": 77,
+        "rank": 78,
         "name": "e6_prefill_tradeoff",
         "id": "83aa2f00631d84ac367c1a437406648ed47cba8ad04700f4ec8a5ef41b2d0bf8",
         "times": [
@@ -6095,7 +6160,7 @@
         ]
       },
       {
-        "rank": 78,
+        "rank": 79,
         "name": "e5_plus_prefillgelu",
         "id": "3a85bad737a50c35ecc2c1383efe9b8e6b6d6f0e829091d9536c72aaae72ea8b",
         "times": [
@@ -6130,7 +6195,7 @@
         ]
       },
       {
-        "rank": 79,
+        "rank": 80,
         "name": "e4_plus_b1gelu",
         "id": "1663bd05dd868e560255c04199f58842154a3573d984eff9c053916e3d62ee65",
         "times": [
@@ -6165,7 +6230,7 @@
         ]
       },
       {
-        "rank": 80,
+        "rank": 81,
         "name": "e3_plus_projection",
         "id": "c55bec43433b0da5bdd79d95141696c3ae0aa4f0f596793fdfe4c9cd11e7dede",
         "times": [
@@ -6200,7 +6265,7 @@
         ]
       },
       {
-        "rank": 81,
+        "rank": 82,
         "name": "e2_rope_online_norm",
         "id": "ee9c8c70db2e90c0a71b0ac2c488185ba5020cedaef6852043b0834acf61b32c",
         "times": [
@@ -6235,7 +6300,7 @@
         ]
       },
       {
-        "rank": 82,
+        "rank": 83,
         "name": "e1_rope_online",
         "id": "f5dd3bd34844fe87d50a66b9604a6c679491bfb74f2744e9ad38950fd0b62427",
         "times": [
@@ -6270,7 +6335,7 @@
         ]
       },
       {
-        "rank": 83,
+        "rank": 84,
         "name": "b1_rope_kv",
         "id": "0e7a476d6bde6a2e6a7b7e582b3d3ea6d69c2976f43dc77dc561e5b054032cab",
         "times": [
@@ -6305,7 +6370,7 @@
         ]
       },
       {
-        "rank": 84,
+        "rank": 85,
         "name": "a2_fused_joint",
         "id": "62986e32830ce54ef5819619edfa1c8dcae94899a95e659be3b2dc606d96de1f",
         "times": [
@@ -6340,7 +6405,7 @@
         ]
       },
       {
-        "rank": 85,
+        "rank": 86,
         "name": "b2_online_attention",
         "id": "fd14e7046c1be89d4b5d4c96cb74c08c03ad844843ac2946420f55b2b4ae6ed4",
         "times": [
@@ -6375,7 +6440,7 @@
         ]
       },
       {
-        "rank": 86,
+        "rank": 87,
         "name": "a2_half_storage",
         "id": "657ca8cd04726d0ef7e4a9deaacc9f644741bd234c6645a4986ca9874803166e",
         "times": [
@@ -6410,7 +6475,7 @@
         ]
       },
       {
-        "rank": 87,
+        "rank": 88,
         "name": "b3_residual_norm",
         "id": "b1f0aeec900e3650301fb5b55b393afd31da630e69fc979f7d54f30fc0a862f1",
         "times": [
@@ -6445,7 +6510,7 @@
         ]
       },
       {
-        "rank": 88,
+        "rank": 89,
         "name": "c3_chunk16_tail",
         "id": "6e2f589895ce6314f7bf92041730ea98cc292b2e364831f4eb0e5057ac9dd90c",
         "times": [
@@ -6480,7 +6545,7 @@
         ]
       },
       {
-        "rank": 89,
+        "rank": 90,
         "name": "c3_chunk4_tail",
         "id": "77a083c31130775328590e8bd6efc1839f50f39ee090a2e99796cb3f95ec7f5f",
         "times": [
@@ -6515,7 +6580,7 @@
         ]
       },
       {
-        "rank": 90,
+        "rank": 91,
         "name": "c2_tiled_prefill_fp16",
         "id": "3ec609a4682953945388ab0a95886bed8d39310a9027b21250cf347c46357e26",
         "times": [
@@ -6550,7 +6615,7 @@
         ]
       },
       {
-        "rank": 91,
+        "rank": 92,
         "name": "b5_b1_bias_gelu",
         "id": "7a31df466cc8fd297344d61eb49d84837c38f15f1998df6e5d4f8c38b6b09ad9",
         "times": [
@@ -6585,7 +6650,7 @@
         ]
       },
       {
-        "rank": 92,
+        "rank": 93,
         "name": "a2_matrix_b8",
         "id": "311a28fc7e3ef26000f74e4a366a5eacb8e7e217f3e0e3173174f97661127638",
         "times": [
@@ -6620,7 +6685,7 @@
         ]
       },
       {
-        "rank": 93,
+        "rank": 94,
         "name": "c1_fp32_prefill_gelu",
         "id": "f10efe049d0ee5027da5aae1a58aaff845eff3f4d46169169c3b0337e60545c5",
         "times": [
@@ -6655,7 +6720,7 @@
         ]
       },
       {
-        "rank": 94,
+        "rank": 95,
         "name": "c1_cached_prefill",
         "id": "43202b3ea8fe64591e9a28678184cdaf55125e2ecaf7ff0cca74d0ffcc67da3a",
         "times": [
@@ -6690,7 +6755,7 @@
         ]
       },
       {
-        "rank": 95,
+        "rank": 96,
         "name": "a4_joint_output",
         "id": "cce3b88f261934be8af68f02624e1b7606c7d005d4f65bcd64fff9d0c864462d",
         "times": [
@@ -6725,7 +6790,7 @@
         ]
       },
       {
-        "rank": 96,
+        "rank": 97,
         "name": "c3_chunk8_tail",
         "id": "6cebabb37b50beaed4d21532575d3fe32517380463b29c38dd90a9804dae7682",
         "times": [
@@ -6760,7 +6825,7 @@
         ]
       },
       {
-        "rank": 97,
+        "rank": 98,
         "name": "portable-d2",
         "id": "09ab593b1f8e75ec95b570891fadcadd97fc18ae389e82eb3ea5bb914dded69a",
         "times": [
@@ -6795,7 +6860,7 @@
         ]
       },
       {
-        "rank": 98,
+        "rank": 99,
         "name": "d2_bias_gelu",
         "id": "54e109880f44b943a3517be91cdf75adb0e23c9ca48c1c0eeec9148a601ed3f5",
         "times": [
@@ -6830,7 +6895,7 @@
         ]
       },
       {
-        "rank": 99,
+        "rank": 100,
         "name": "c3_recheck",
         "id": "fb344a940aed08c904e20a0af03aeff100af2f1632861820a18f3a3dc57dd746",
         "times": [
@@ -6865,7 +6930,7 @@
         ]
       },
       {
-        "rank": 100,
+        "rank": 101,
         "name": "d1_shape_joint",
         "id": "6c1e598c2db2e755e837bc12aeab4f7293620bbc2edd461414fbd5a48337d534",
         "times": [
@@ -6900,7 +6965,7 @@
         ]
       },
       {
-        "rank": 101,
+        "rank": 102,
         "name": "c3_int8_b1_joint_chunk4_b48",
         "id": "a321e53405a185ffe4fa15d4d9c96d38674e35e14a8d0bd1b96f148353e23d88",
         "times": [
@@ -6935,7 +7000,7 @@
         ]
       },
       {
-        "rank": 102,
+        "rank": 103,
         "name": "a1_joint_fp32",
         "id": "9a0ba14a3b07ac1fe6dbb577a686143b6dd1f1d65109a44a3d5e73b55e21cfc7",
         "times": [
@@ -6970,7 +7035,7 @@
         ]
       },
       {
-        "rank": 103,
+        "rank": 104,
         "name": "a3_joint_chunk4_fp32",
         "id": "3f918e755e76521e43817661f59cb096a2cf7879e30c709216b7e79f565cf368",
         "times": [
@@ -7005,7 +7070,7 @@
         ]
       },
       {
-        "rank": 104,
+        "rank": 105,
         "name": "b1_mixed_fp16",
         "id": "9d0460bd3b9ae20b82f67806e2790d60000e9933c2eae072856003376802340e",
         "times": [
@@ -7040,7 +7105,7 @@
         ]
       },
       {
-        "rank": 105,
+        "rank": 106,
         "name": "published-control-f06",
         "id": "c3c7ab702f10f976026eb992f8adfe78eefad59a441e2d13506e73e477063386",
         "times": [
@@ -7075,7 +7140,7 @@
         ]
       },
       {
-        "rank": 106,
+        "rank": 107,
         "name": "c1_int8_weight_selective",
         "id": "724c5cb5970a5c5254d92cb45718e98a419e06eb1880c75dac4c1f415e086277",
         "times": [
@@ -7110,7 +7175,7 @@
         ]
       },
       {
-        "rank": 107,
+        "rank": 108,
         "name": "a2_chunk4_fp32",
         "id": "e51eeee63045733ea14e6dab363795e9e12148ac1b46d2ca2d1c40d15cad2a46",
         "times": [
@@ -7145,7 +7210,7 @@
         ]
       },
       {
-        "rank": 108,
+        "rank": 109,
         "name": "official_fp32",
         "id": "cba11e9837b44917f91dcd99e8967c199faa53a6e058e1cbafcd8c23ca27a354",
         "times": [
@@ -7180,7 +7245,7 @@
         ]
       },
       {
-        "rank": 109,
+        "rank": 110,
         "name": "a1_batch_int8",
         "id": "539f72cdd7e9887382d71ccc40c1974e08394cbfc197734355e147c95d96a4ed",
         "times": [
@@ -7215,7 +7280,7 @@
         ]
       },
       {
-        "rank": 110,
+        "rank": 111,
         "name": "b2_full_fp16",
         "id": "0b0d03a6f351fe7cdc3499a4051d125980a373a8f8ec5b7005926f2e27a1e6a2",
         "times": [
