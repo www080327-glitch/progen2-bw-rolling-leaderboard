@@ -8,6 +8,12 @@ function renderThreeRound(d){
  $('updated').textContent='更新于 '+d.updated_at+' · 单卡 BW · 三轮完整四任务';
  $('champName').textContent=d.champion.name;
  $('freshScore').textContent=fmt(g.total_mean_s,9)+' s';
+ $('freshScore').parentElement.querySelector('small')?.remove();
+ const unit=$('freshScore').nextElementSibling;
+ if(unit&&unit.textContent.trim()==='/ 90')unit.remove();
+ $('gain').parentElement.querySelector('span').textContent='配对复验 · 耗时中位收益';
+ $('previousScore').parentElement.querySelector('span').textContent='赛事正式总分';
+
  $('freshWarning').textContent='三轮分项均值之和；官方总分 N/A。B8 最低观察 1971/2048。';
  $('repScore').textContent='最慢确认 '+fmt(g.worst_round_s,9)+' s';
  $('previousScore').textContent='N/A';
