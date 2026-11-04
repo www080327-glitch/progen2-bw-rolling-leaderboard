@@ -17,8 +17,16 @@ function renderThreeRound(d){
  $('freshWarning').textContent='三轮分项均值之和；官方总分 N/A。' + (g.worst_macro_rate===1?' 三轮四项均全对。':'');
  $('repScore').textContent='最慢确认 '+fmt(g.worst_round_s,9)+' s';
  $('previousScore').textContent='N/A';
- $('gain').textContent=fmt(d.qualification.median_paired_time_gain_s*1000,3)+' ms';
- $('ci').textContent=(d.legacy_qualification?'两对同卡 ABBA 整轮收益；对手为 F0':'历史八对组合耗时中位收益；对手是 R0 + E0');
+ const delivery=d.current_delivery_qualification;
+ if(delivery){
+  $('champName').parentElement.querySelector('.eyebrow').textContent='当前提交版本 · 三轮确认';
+  $('gain').parentElement.querySelector('span').textContent='QJ 与 R0 · 同卡复验';
+  $('gain').textContent=delivery.pairs+' 对';
+  $('ci').textContent='历史八对资格属于 R1V-E1';
+ }else{
+  $('gain').textContent=fmt(d.qualification.median_paired_time_gain_s*1000,3)+' ms';
+  $('ci').textContent=(d.legacy_qualification?'两对同卡 ABBA 整轮收益；对手为 F0':'历史八对组合耗时中位收益；对手是 R0 + E0');
+ }
  $('counts').textContent=d.counts.versions+' / '+d.counts.complete_runs+' / '+d.counts.failed_or_incomplete_runs;
  $('finalTasks').innerHTML=g.task_means_s.map((t,i)=>'<div class="task"><div class="label">'+['B1','B8','B4 长生成','P512'][i]+'</div><strong>'+fmt(t*1000,6)+' ms</strong></div>').join('');
  $('pointParts').textContent='按四项分别取三次有效耗时算术平均。官方一致率聚合待确认。';
@@ -26,7 +34,7 @@ function renderThreeRound(d){
  $('threeRound').innerHTML='<h2>三轮分项均值</h2><p>只比较固定登记的完整三轮；未登记版本与正式总分均为 N/A。</p>'+d.three_round_means.map(g=>'<h3>'+esc(g.name)+' · '+esc(g.round_group_id)+'</h3><p>'+g.task_means_s.map(t=>fmt(t*1000,6)).join(' / ')+' ms；合计 '+fmt(g.total_mean_s,9)+' s，最慢 '+fmt(g.worst_round_s,9)+' s。</p><div class="table-wrap"><table><thead><tr><th>登记轮次</th><th>B1 / B8 / B4 / P512（ms）</th><th>一致数</th><th>宏一致率（描述）</th></tr></thead><tbody>'+g.rounds.map(r=>'<tr><td>'+esc(r.run_id)+'</td><td>'+r.times_s.map(t=>fmt(t*1000,6)).join(' / ')+'</td><td>'+r.same.map((s,i)=>s+'/'+r.total[i]).join(' / ')+'</td><td>'+fmt(r.macro_rate*100,5)+'%</td></tr>').join('')+'</tbody></table></div><details><summary>固定身份与协议</summary><p>'+[g.protocol,g.source_git_sha,g.source_manifest_sha256,g.config_sha256,g.environment_sha256].map(esc).join('<br>')+'</p></details>').join('');
  $('notes').innerHTML=d.notes.map(n=>'<li>'+esc(n)+'</li>').join('');
  $('snapshot').textContent='数据快照 '+d.snapshot;
- $('sourceCommit').textContent='冠军源码提交 '+d.champion.source_commit;
+ $('sourceCommit').textContent=(delivery?'当前交付源码提交 ':'冠军源码提交 ')+d.champion.source_commit;
  render();
 }
 fetch('data.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('数据读取失败');return r.json()}).then(d=>{data=d;if(d.schema===3){renderThreeRound(d);return;}const c=d.champion;$('updated').textContent='更新于 '+d.updated_at+' · 单卡 BW · 完整四任务';$('freshScore').textContent=fmt(c.fresh_score,4);$('champName').textContent=c.name;$('freshWarning').textContent='独立最终轮四项一致率：'+c.rates.map(r=>fmt(r*100,3)+'%').join(' / ')+'。';$('repScore').textContent='注册代表轮 '+fmt(c.representative_score)+'/90；最高实际整轮 '+fmt(c.best_observed_score)+'/90。';$('previousScore').textContent=fmt(c.representative_score)+'/90';$('gain').textContent=(d.qualification.mean_gain>=0?'+':'')+fmt(d.qualification.mean_gain,4);$('ci').textContent='历史分母，描述性95%区间 '+d.qualification.CI.map(x=>fmt(x,4)).join('–');$('counts').textContent=d.counts.versions+' / '+d.counts.complete_runs+' / '+d.counts.failed_or_incomplete_runs;$('finalTasks').innerHTML=c.times.map((t,i)=>`<div class="task ${c.rates[i]<1?'risk':''}"><div class="label">TASK ${i+1} · ${['B1 / P32 / G256','B8 / P32 / G256','B4 / P32 / G512','B4 / P512 / G64'][i]}</div><strong>${fmt(t,6)}s</strong><small>一致率 ${fmt(c.rates[i]*100,5)}%<br>性能分 ${fmt(c.performance[i])}/10</small></div>`).join('');$('pointParts').textContent=`独立最终轮：基础 ${fmt(c.base,3)} + 一致性 ${fmt(c.consistency,5)} + 四项性能 ${c.performance.map(x=>fmt(x)).join(' / ')} = ${fmt(c.fresh_score)}/90。`;$('minSources').innerHTML=d.official.minima.map((t,i)=>`<div class="source"><span class="label">TASK ${i+1}</span><strong>${fmt(t,9)}s</strong>${d.official.rows.filter(r=>r.times[i]===t&&r.rates[i]>=.8).map(r=>'<b>'+esc(r.name)+'</b>').join('')}</div>`).join('');$('notes').innerHTML=d.notes.map(n=>'<li>'+esc(n)+'</li>').join('');$('snapshot').textContent='数据快照 '+d.snapshot;$('sourceCommit').textContent='冠军源码提交 '+c.source_commit;render();}).catch(e=>{$('updated').textContent='读取失败：'+e.message;});
