@@ -14,11 +14,11 @@ function renderThreeRound(d){
  $('gain').parentElement.querySelector('span').textContent='配对复验 · 耗时中位收益';
  $('previousScore').parentElement.querySelector('span').textContent='赛事正式总分';
 
- $('freshWarning').textContent='三轮分项均值之和；官方总分 N/A。B8 最低观察 1971/2048。';
+ $('freshWarning').textContent='三轮分项均值之和；官方总分 N/A。' + (g.worst_macro_rate===1?' 三轮四项均全对。':'');
  $('repScore').textContent='最慢确认 '+fmt(g.worst_round_s,9)+' s';
  $('previousScore').textContent='N/A';
  $('gain').textContent=fmt(d.qualification.median_paired_time_gain_s*1000,3)+' ms';
- $('ci').textContent='历史八对组合耗时中位收益；对手是 R0 + E0';
+ $('ci').textContent=(d.legacy_qualification?'两对同卡 ABBA 整轮收益；对手为 F0':'历史八对组合耗时中位收益；对手是 R0 + E0');
  $('counts').textContent=d.counts.versions+' / '+d.counts.complete_runs+' / '+d.counts.failed_or_incomplete_runs;
  $('finalTasks').innerHTML=g.task_means_s.map((t,i)=>'<div class="task"><div class="label">'+['B1','B8','B4 长生成','P512'][i]+'</div><strong>'+fmt(t*1000,6)+' ms</strong></div>').join('');
  $('pointParts').textContent='按四项分别取三次有效耗时算术平均。官方一致率聚合待确认。';

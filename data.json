@@ -1,7 +1,7 @@
 {
   "schema": 3,
-  "updated_at": "2026-11-04T00:25:04.192904+08:00",
-  "snapshot": "1afc04fef7a32e876ebc6916c84c8ef36575b9b9c9494b362bbdb71589d8fcbf",
+  "updated_at": "2026-11-04T18:52:12.698459+08:00",
+  "snapshot": "530283ee2d2d4ea0a8eca7cbebda89282d544d1dceab928c5ad7ed27ebb6ed18",
   "scope": "BW internal experiments; not an official ranking",
   "counts": {
     "versions": 124,
@@ -10,22 +10,21 @@
     "failed_or_incomplete_runs": 1
   },
   "champion": {
-    "id": "5598134d57f66262bfc0aed029e9333e7f0fc957c9c9bec6a2d634799dc85e79",
-    "name": "R1V-E1",
-    "source_commit": "53dad9ccaa38bea5722b3a170e590f16e173628f",
+    "id": "81190b64b7d2fd84d6acb7319486f3c20c39c97f7e6ca02674114323dfae343e",
+    "name": "F0 + B1 MLP BK128 / E1",
+    "source_commit": "17dc39a42903fd5bc94f39404f465f0ab25e2c8c",
     "times": [
-      0.10132825964440902,
-      0.6307162650239965,
-      0.7323889505739013,
-      0.06149578893867632
+      0.08554398672034343,
+      0.5958780293973783,
+      0.6910968360025436,
+      0.061608683628340564
     ],
-    "round_group_id": "r1v-e1-confirmations-20261103",
+    "round_group_id": "b1-mlp-bk128-e1-20261104",
     "fresh_score": null
   },
   "qualification": {
-    "pairs": 8,
-    "median_paired_gain": 5.012387866649746,
-    "median_paired_time_gain_s": 0.22297243564389646
+    "pairs": 2,
+    "median_paired_time_gain_s": 0.02698474924545735
   },
   "official": {
     "minima": [
@@ -8074,6 +8073,104 @@
   },
   "three_round_means": [
     {
+      "round_group_id": "b1-mlp-bk128-e1-20261104",
+      "name": "F0 + B1 MLP BK128 / E1",
+      "candidate_id": "81190b64b7d2fd84d6acb7319486f3c20c39c97f7e6ca02674114323dfae343e",
+      "source_git_sha": "17dc39a42903fd5bc94f39404f465f0ab25e2c8c",
+      "source_manifest_sha256": "81190b64b7d2fd84d6acb7319486f3c20c39c97f7e6ca02674114323dfae343e",
+      "config_sha256": "5f998289534eefe0a04493199dfc610df500e0d117c3ed79a0b1ad57a8f48137",
+      "environment_sha256": "28076c5c1e371846261f2857ca955a7510a970968305118134b1155317039258",
+      "protocol": "three-new-process-official-complete-rounds-v1",
+      "run_ids": [
+        "b1-mlp-bk128-e1-20261104-confirmation-0",
+        "b1-mlp-bk128-e1-20261104-confirmation-1",
+        "b1-mlp-bk128-e1-20261104-confirmation-2"
+      ],
+      "rounds": [
+        {
+          "run_id": "b1-mlp-bk128-e1-20261104-confirmation-0",
+          "times_s": [
+            0.08698407118208706,
+            0.6011347970925272,
+            0.6895152949728072,
+            0.06166205182671547
+          ],
+          "same": [
+            256,
+            2048,
+            2048,
+            256
+          ],
+          "total": [
+            256,
+            2048,
+            2048,
+            256
+          ],
+          "macro_rate": 1.0,
+          "total_s": 1.4392962150741369
+        },
+        {
+          "run_id": "b1-mlp-bk128-e1-20261104-confirmation-1",
+          "times_s": [
+            0.08495882200077176,
+            0.5918276980519295,
+            0.6918274499475956,
+            0.06165640102699399
+          ],
+          "same": [
+            256,
+            2048,
+            2048,
+            256
+          ],
+          "total": [
+            256,
+            2048,
+            2048,
+            256
+          ],
+          "macro_rate": 1.0,
+          "total_s": 1.4302703710272908
+        },
+        {
+          "run_id": "b1-mlp-bk128-e1-20261104-confirmation-2",
+          "times_s": [
+            0.08468906697817147,
+            0.5946715930476785,
+            0.6919477630872279,
+            0.06150759803131223
+          ],
+          "same": [
+            256,
+            2048,
+            2048,
+            256
+          ],
+          "total": [
+            256,
+            2048,
+            2048,
+            256
+          ],
+          "macro_rate": 1.0,
+          "total_s": 1.43281602114439
+        }
+      ],
+      "task_means_s": [
+        0.08554398672034343,
+        0.5958780293973783,
+        0.6910968360025436,
+        0.061608683628340564
+      ],
+      "total_mean_s": 1.4341275357486059,
+      "worst_round_s": 1.4392962150741369,
+      "descriptive_macro_mean": 1.0,
+      "worst_macro_rate": 1.0,
+      "official_score": null,
+      "official_consistency_rule": "PENDING"
+    },
+    {
       "round_group_id": "night-1400-e1-split-3-6-20261104",
       "name": "F0 + B8 split 3/6 (research)",
       "candidate_id": "c7784d13eca1b49113ec854a1ea8b409afbf698bff6ffca137dbf770c24a272a",
@@ -8567,6 +8664,27 @@
   "report_score": null,
   "notes": [
     "三轮分项均值使用预登记的三次完整轮；官方一致率聚合和正式总分待确认。",
-    "单轮与稳健视图为历史模拟；单轮分母不用于三轮视图。"
-  ]
+    "单轮与稳健视图为历史模拟；单轮分母不用于三轮视图。",
+    "当前冠军按三轮均值排名；通过两对 F0 同卡复验。历史八对资格属于旧 R1V-E1；历史单轮表及计数保留原快照。"
+  ],
+  "legacy_qualification": {
+    "champion": {
+      "id": "5598134d57f66262bfc0aed029e9333e7f0fc957c9c9bec6a2d634799dc85e79",
+      "name": "R1V-E1",
+      "source_commit": "53dad9ccaa38bea5722b3a170e590f16e173628f",
+      "times": [
+        0.10132825964440902,
+        0.6307162650239965,
+        0.7323889505739013,
+        0.06149578893867632
+      ],
+      "round_group_id": "r1v-e1-confirmations-20261103",
+      "fresh_score": null
+    },
+    "qualification": {
+      "pairs": 8,
+      "median_paired_gain": 5.012387866649746,
+      "median_paired_time_gain_s": 0.22297243564389646
+    }
+  }
 }
