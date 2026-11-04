@@ -1,7 +1,7 @@
 {
   "schema": 3,
-  "updated_at": "2026-11-04T20:07:23.252113+08:00",
-  "snapshot": "dd69e308b87eb814d86c8e8b191a7ced51d83c1685bcf7c03362386258c992ca",
+  "updated_at": "2026-11-04T23:40:26.461178+08:00",
+  "snapshot": "cd41fdf112f8911d06488355919d9d33712becb63fac183bfaac015f4e0d338c",
   "scope": "BW internal experiments; not an official ranking",
   "counts": {
     "versions": 124,
@@ -10,16 +10,16 @@
     "failed_or_incomplete_runs": 1
   },
   "champion": {
-    "id": "81190b64b7d2fd84d6acb7319486f3c20c39c97f7e6ca02674114323dfae343e",
-    "name": "F0 + B1 MLP BK128 / E1",
-    "source_commit": "17dc39a42903fd5bc94f39404f465f0ab25e2c8c",
+    "id": "f8bec01fba6b906a3c7cdb1267453b9031da95aeb7c11c28b6e558a8e79164ea",
+    "name": "QJ-E1 · 当前速度交付",
+    "source_commit": "566cd9ee068ae916c12c8a659cb24285f350058f",
     "times": [
-      0.08554398672034343,
-      0.5958780293973783,
-      0.6910968360025436,
-      0.061608683628340564
+      0.08270013297442347,
+      0.5984832620015368,
+      0.6764283600108077,
+      0.06160152497856567
     ],
-    "round_group_id": "b1-mlp-bk128-e1-20261104",
+    "round_group_id": "r0-qkv-b4-joint-rope-e1-20261104",
     "fresh_score": null
   },
   "qualification": {
@@ -8763,8 +8763,8 @@
   "notes": [
     "三轮分项均值使用预登记的三次完整轮；官方一致率聚合和正式总分待确认。",
     "单轮与稳健视图为历史模拟；单轮分母不用于三轮视图。",
-    "当前冠军按三轮均值排名；通过两对 F0 同卡复验。历史八对资格属于旧 R1V-E1；历史单轮表及计数保留原快照。",
-    "研发前沿 QJ 仅列独立三轮：1.419213280 s；一轮 B8 为 1971/2048，仍过内部工作线，尚未达到 1.400 s。默认交付仍为全对的 B1 BK128 / E1；历史表计数不含单列新增组。"
+    "私有 main 当前速度交付为 QJ-E1（1.419213280 s）；原登记三轮含一轮 B8 1971/2048，三轮均过内部工作线。官方总分 N/A。历史单轮表及原件不变。",
+    "R0 的两对 F0 同卡复验保留；历史八对资格仍只属于 R1V-E1。"
   ],
   "legacy_qualification": {
     "champion": {
@@ -8785,5 +8785,9 @@
       "median_paired_gain": 5.012387866649746,
       "median_paired_time_gain_s": 0.22297243564389646
     }
+  },
+  "current_delivery_qualification": {
+    "pairs": 2,
+    "historical_eight_pair_qualification_not_inherited": true
   }
 }
