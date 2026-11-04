@@ -1,7 +1,7 @@
 {
   "schema": 3,
-  "updated_at": "2026-11-04T18:52:12.698459+08:00",
-  "snapshot": "530283ee2d2d4ea0a8eca7cbebda89282d544d1dceab928c5ad7ed27ebb6ed18",
+  "updated_at": "2026-11-04T20:07:23.252113+08:00",
+  "snapshot": "dd69e308b87eb814d86c8e8b191a7ced51d83c1685bcf7c03362386258c992ca",
   "scope": "BW internal experiments; not an official ranking",
   "counts": {
     "versions": 124,
@@ -8073,6 +8073,104 @@
   },
   "three_round_means": [
     {
+      "round_group_id": "r0-qkv-b4-joint-rope-e1-20261104",
+      "name": "B1 QKV + B4 joint RoPE / E1 (research)",
+      "candidate_id": "f8bec01fba6b906a3c7cdb1267453b9031da95aeb7c11c28b6e558a8e79164ea",
+      "source_git_sha": "566cd9ee068ae916c12c8a659cb24285f350058f",
+      "source_manifest_sha256": "2f08b18c05b2afc1f7e679eaa6f1163fe82103e73769accc934e23722594eac1",
+      "config_sha256": "1170f5863c5bab110e674eb6d46f09cd4eb573a3070a8ab6f449737b03b3f6f6",
+      "environment_sha256": "6fd06aeaa815f2fbe67f593f9c587f7a205d5163e51b66319752f063a6bfd17e",
+      "protocol": "three-new-process-official-complete-rounds-v1",
+      "run_ids": [
+        "r0-qkv-b4-joint-rope-e1-20261104-confirmation-0",
+        "r0-qkv-b4-joint-rope-e1-20261104-confirmation-1",
+        "r0-qkv-b4-joint-rope-e1-20261104-confirmation-2"
+      ],
+      "rounds": [
+        {
+          "run_id": "r0-qkv-b4-joint-rope-e1-20261104-confirmation-0",
+          "times_s": [
+            0.08379327296279371,
+            0.600945707061328,
+            0.6922084890538827,
+            0.06182853598147631
+          ],
+          "same": [
+            256,
+            2048,
+            2048,
+            256
+          ],
+          "total": [
+            256,
+            2048,
+            2048,
+            256
+          ],
+          "macro_rate": 1.0,
+          "total_s": 1.4387760050594807
+        },
+        {
+          "run_id": "r0-qkv-b4-joint-rope-e1-20261104-confirmation-1",
+          "times_s": [
+            0.08231863600667566,
+            0.594357265974395,
+            0.6705664179753512,
+            0.06155290093738586
+          ],
+          "same": [
+            256,
+            1971,
+            2048,
+            256
+          ],
+          "total": [
+            256,
+            2048,
+            2048,
+            256
+          ],
+          "macro_rate": 0.9906005859375,
+          "total_s": 1.4087952208938077
+        },
+        {
+          "run_id": "r0-qkv-b4-joint-rope-e1-20261104-confirmation-2",
+          "times_s": [
+            0.08198848995380104,
+            0.6001468129688874,
+            0.6665101730031893,
+            0.061423138016834855
+          ],
+          "same": [
+            256,
+            2048,
+            2048,
+            256
+          ],
+          "total": [
+            256,
+            2048,
+            2048,
+            256
+          ],
+          "macro_rate": 1.0,
+          "total_s": 1.4100686139427125
+        }
+      ],
+      "task_means_s": [
+        0.08270013297442347,
+        0.5984832620015368,
+        0.6764283600108077,
+        0.06160152497856567
+      ],
+      "total_mean_s": 1.4192132799653336,
+      "worst_round_s": 1.4387760050594807,
+      "descriptive_macro_mean": 0.9968668619791666,
+      "worst_macro_rate": 0.9906005859375,
+      "official_score": null,
+      "official_consistency_rule": "PENDING"
+    },
+    {
       "round_group_id": "b1-mlp-bk128-e1-20261104",
       "name": "F0 + B1 MLP BK128 / E1",
       "candidate_id": "81190b64b7d2fd84d6acb7319486f3c20c39c97f7e6ca02674114323dfae343e",
@@ -8665,7 +8763,8 @@
   "notes": [
     "三轮分项均值使用预登记的三次完整轮；官方一致率聚合和正式总分待确认。",
     "单轮与稳健视图为历史模拟；单轮分母不用于三轮视图。",
-    "当前冠军按三轮均值排名；通过两对 F0 同卡复验。历史八对资格属于旧 R1V-E1；历史单轮表及计数保留原快照。"
+    "当前冠军按三轮均值排名；通过两对 F0 同卡复验。历史八对资格属于旧 R1V-E1；历史单轮表及计数保留原快照。",
+    "研发前沿 QJ 仅列独立三轮：1.419213280 s；一轮 B8 为 1971/2048，仍过内部工作线，尚未达到 1.400 s。默认交付仍为全对的 B1 BK128 / E1；历史表计数不含单列新增组。"
   ],
   "legacy_qualification": {
     "champion": {
