@@ -1,7 +1,7 @@
 {
   "schema": 3,
-  "updated_at": "2026-11-04T23:40:26.461178+08:00",
-  "snapshot": "cd41fdf112f8911d06488355919d9d33712becb63fac183bfaac015f4e0d338c",
+  "updated_at": "2026-11-05T15:21:51+08:00",
+  "snapshot": "9609d94e5f990dffdfb1ddc116aee249d030b9a4f3d4d035ad0a3e316085c5d4",
   "scope": "BW internal experiments; not an official ranking",
   "counts": {
     "versions": 124,
@@ -10,16 +10,16 @@
     "failed_or_incomplete_runs": 1
   },
   "champion": {
-    "id": "f8bec01fba6b906a3c7cdb1267453b9031da95aeb7c11c28b6e558a8e79164ea",
-    "name": "QJ-E1 · 当前速度交付",
+    "id": "2f08b18c05b2afc1f7e679eaa6f1163fe82103e73769accc934e23722594eac1",
+    "name": "QJ-E1 · 最终交付",
     "source_commit": "566cd9ee068ae916c12c8a659cb24285f350058f",
     "times": [
-      0.08270013297442347,
-      0.5984832620015368,
-      0.6764283600108077,
-      0.06160152497856567
+      0.08382068458013237,
+      0.6079814297457536,
+      0.6843736513207356,
+      0.06164219703835746
     ],
-    "round_group_id": "r0-qkv-b4-joint-rope-e1-20261104",
+    "round_group_id": "final-20261105-qj-e1",
     "fresh_score": null
   },
   "qualification": {
@@ -8073,6 +8073,104 @@
   },
   "three_round_means": [
     {
+      "round_group_id": "final-20261105-qj-e1",
+      "name": "QJ-E1",
+      "candidate_id": "2f08b18c05b2afc1f7e679eaa6f1163fe82103e73769accc934e23722594eac1",
+      "source_git_sha": "566cd9ee068ae916c12c8a659cb24285f350058f",
+      "source_manifest_sha256": "2f08b18c05b2afc1f7e679eaa6f1163fe82103e73769accc934e23722594eac1",
+      "config_sha256": "1170f5863c5bab110e674eb6d46f09cd4eb573a3070a8ab6f449737b03b3f6f6",
+      "environment_sha256": "47ae2bfd47b30fccf404e52f0982f38be5a13e7993393a9c86beaaf8a4d006f0",
+      "protocol": "three-preregistered-final-processes-v1",
+      "run_ids": [
+        "final-20261105-qj-e1-c1",
+        "final-20261105-qj-e1-c2",
+        "final-20261105-qj-e1-c3"
+      ],
+      "rounds": [
+        {
+          "run_id": "final-20261105-qj-e1-c1",
+          "times_s": [
+            0.08398737292736769,
+            0.6049554729834199,
+            0.6757288810331374,
+            0.06146304914727807
+          ],
+          "same": [
+            256,
+            1971,
+            2048,
+            256
+          ],
+          "total": [
+            256,
+            2048,
+            2048,
+            256
+          ],
+          "total_s": 1.426134776091203,
+          "macro_rate": 0.9906005859375
+        },
+        {
+          "run_id": "final-20261105-qj-e1-c2",
+          "times_s": [
+            0.0838554569054395,
+            0.6055096201598644,
+            0.6913721219170839,
+            0.06166921998374164
+          ],
+          "same": [
+            256,
+            1971,
+            2048,
+            256
+          ],
+          "total": [
+            256,
+            2048,
+            2048,
+            256
+          ],
+          "total_s": 1.4424064189661294,
+          "macro_rate": 0.9906005859375
+        },
+        {
+          "run_id": "final-20261105-qj-e1-c3",
+          "times_s": [
+            0.08361922390758991,
+            0.6134791960939765,
+            0.6860199510119855,
+            0.06179432198405266
+          ],
+          "same": [
+            256,
+            2048,
+            2048,
+            256
+          ],
+          "total": [
+            256,
+            2048,
+            2048,
+            256
+          ],
+          "total_s": 1.4449126929976046,
+          "macro_rate": 1.0
+        }
+      ],
+      "task_means_s": [
+        0.08382068458013237,
+        0.6079814297457536,
+        0.6843736513207356,
+        0.06164219703835746
+      ],
+      "total_mean_s": 1.437817962684979,
+      "worst_round_s": 1.4449126929976046,
+      "descriptive_macro_mean": 0.9937337239583334,
+      "worst_macro_rate": 0.9906005859375,
+      "official_score": null,
+      "official_consistency_rule": "PENDING"
+    },
+    {
       "round_group_id": "r0-qkv-b4-joint-rope-e1-20261104",
       "name": "B1 QKV + B4 joint RoPE / E1 (research)",
       "candidate_id": "f8bec01fba6b906a3c7cdb1267453b9031da95aeb7c11c28b6e558a8e79164ea",
@@ -8763,8 +8861,8 @@
   "notes": [
     "三轮分项均值使用预登记的三次完整轮；官方一致率聚合和正式总分待确认。",
     "单轮与稳健视图为历史模拟；单轮分母不用于三轮视图。",
-    "私有 main 当前速度交付为 QJ-E1（1.419213280 s）；原登记三轮含一轮 B8 1971/2048，三轮均过内部工作线。官方总分 N/A。历史单轮表及原件不变。",
-    "R0 的两对 F0 同卡复验保留；历史八对资格仍只属于 R1V-E1。"
+    "R0 的两对 F0 同卡复验保留；历史八对资格仍只属于 R1V-E1。",
+    "本批最终确认 1.437817963 s；三轮均过内部工作线。官方总分 N/A。"
   ],
   "legacy_qualification": {
     "champion": {
@@ -8787,7 +8885,8 @@
     }
   },
   "current_delivery_qualification": {
-    "pairs": 2,
+    "selection_rounds": 30,
+    "confirmation_rounds": 3,
     "historical_eight_pair_qualification_not_inherited": true
   }
 }

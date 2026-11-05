@@ -20,8 +20,9 @@ function renderThreeRound(d){
  const delivery=d.current_delivery_qualification;
  if(delivery){
   $('champName').parentElement.querySelector('.eyebrow').textContent='当前提交版本 · 三轮确认';
-  $('gain').parentElement.querySelector('span').textContent='QJ 与 R0 · 同卡复验';
-  $('gain').textContent=delivery.pairs+' 对';
+  const selection=Number.isInteger(delivery.selection_rounds);
+  $('gain').parentElement.querySelector('span').textContent=selection?'选型 · 完整官方轮':'历史同卡复验';
+  $('gain').textContent=selection?delivery.selection_rounds+' 轮':delivery.pairs+' 对';
   $('ci').textContent='历史八对资格属于 R1V-E1';
  }else{
   $('gain').textContent=fmt(d.qualification.median_paired_time_gain_s*1000,3)+' ms';
